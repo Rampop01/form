@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="logo">
+          <img src="images/logo.jpg" alt="" />
+        </div>
+        <div class="studReg">
+          <h1>Student Registration Form</h1>
+          <p>
+            fill out the form to apply for the training courses. You can
+            consider your applicatiion accepted after you received a
+            confirmation email.
+          </p>
+        </div>
+      </div>
+
+      <!-- Student information section -->
+      <form id="regform">
+        <div>
+          <h3 class="info">Student Information</h3>
+          <input type="text" class="name" id="first" placeholder="First Name" />
+          <input
+            type="text"
+            class="name"
+            id="middle"
+            placeholder="Middle Name"
+          />
+          <input type="text" class="name" id="last" placeholder="Last Name" />
+        </div>
+        <div>
+          <input type="date" class="dob" id="dob" placeholder="Date of Birth" />
+          <input type="text" class="dob" id="stud" placeholder="Student ID" />
+        </div>
+
+        <!-- address section -->
+        <div>
+          <h3 class="address">Address</h3>
+          <input
+            type="text"
+            class="street"
+            id="street"
+            placeholder="Street Address"
+          />
+        </div>
+        <div>
+          <input type="text" class="dob" id="boxcity" placeholder="City" />
+          <input
+            type="text"
+            class="dob"
+            id="state"
+            placeholder="State / Province"
+          />
+          <div>
+            <input type="text" class="dob" id="country" placeholder="Country" />
+            <input type="text" class="dob" id="zip" placeholder="Zip Code" />
+          </div>
+          <div>
+            <h3>Contact Information</h3>
+            <input type="email" class="dob" id="email" placeholder="E-mail" />
+            <input
+              type="text"
+              class="dob"
+              id="phone"
+              placeholder="Phone number"
+            />
+          </div>
+        </div>
+
+        <!-- courses section -->
+        <div>
+          <h3 class="course">Courses <span>*</span></h3>
+        </div>
+        <div>
+          <input type="text" class="new" placeholder=" + Add new record" />
+          <select name="" id="courseDrop">
+            <option value="course" class="cour">Course</option>
+            <option value="Biology" class="cour">Biology</option>
+            <option value="Biology" class="cour">Chemistry</option>
+            <option value="Biology" class="cour">Physics</option>
+          </select>
+          <select name="" id="levelDrop">
+            <option value="level" class="drop">Level</option>
+            <option value="300" class="drop">200l</option>
+            <option value="300" class="drop">300l</option>
+          </select>
+          <select name="" id="languageDrop">
+            <option value="language" class="drop">Language</option>
+            <option value="language" class="drop">Yoruba</option>
+            <option value="language" class="drop">Igbo</option>
+            <option value="language" class="drop">Hausa</option>
+          </select>
+          <select name="" id="startDrop">
+            <option value="start date" class="drop">Start Date</option>
+            <option value="end date" class="drop">2020</option>
+            <option value="end date" class="drop">2021</option>
+          </select>
+          <input type="text" class="empty" />
+        </div>
+        <textarea name="comment" id="comment" placeholder="Comments">
+           Comments</textarea
+        >
+        <button id="submit">SEND REQUEST</button>
+      </form>
+
+      <button id="preview"><a href="/datapreview.html">PREVIEW PAGE</a></button>
+      <script src="script.js"></script>
+    </div>
+  </body>
+</html>

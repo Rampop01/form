@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/datapreview.css" />
+  </head>
+  <body>
+    <div class="prevcontainer">
+      <div class="info">
+        <h1>Student Information</h1>
+        <div>
+          <p>FIRST NAME: <span id="pfirst"></span></p>
+          <p>MIDDLE NAME: <span id="pmiddle"></span></p>
+          <p>LAST NAME: <span id="plast"></span></p>
+          <p>DATE OF BIRTH: <span id="pdob"></span></p>
+          <p>STUDENT ID: <span id="pid"></span></p>
+        </div>
+      </div>
+      <div class="address">
+        <h1>Address</h1>
+        <div>
+          <p>STREET ADDRESS: <span id="pstreet"></span></p>
+          <p>CITY: <span id="pcity"></span></p>
+          <p>COUNTRY: <span id="pcountry"></span></p>
+          <p>STATE: <span id="pstate"></span></p>
+          <p>ZIP CODE: <span id="pzip"></span></p>
+        </div>
+      </div>
+      <div class="contact">
+        <h1>Contact Information</h1>
+        <div>
+          <p>EMAIL: <span id="pemail"></span></p>
+          <p>NUMBER: <span id="pphone"></span></p>
+        </div>
+      </div>
+      <div class="courses">
+        <h1>Courses</h1>
+        <div>
+          <p>COURSE: <span id="pcourse"></span></p>
+          <p>LEVEL: <span id="plevel"></span></p>
+          <p>LANGUAGE: <span id="planguage"></span></p>
+          <p>START DATE: <span id="pstart"></span></p>
+          <p>COMMENT: <span id="pcomment"></span></p>
+        </div>
+      </div>
+    </div>
+    <script>
+      const collectedData = JSON.parse(localStorage.getItem("regDetails"));
+
+      document.getElementById("pfirst").innerText = collectedData.first;
+      document.getElementById("pmiddle").innerText = collectedData.middle;
+      document.getElementById("plast").innerText = collectedData.last;
+      document.getElementById("pdob").innerText = collectedData.dob;
+      document.getElementById("pid").innerText = collectedData.stud;
+      document.getElementById("pstreet").innerText = collectedData.street;
+      document.getElementById("pcity").innerText = collectedData.boxcity;
+      document.getElementById("pcountry").innerText = collectedData.country;
+      document.getElementById("pstate").innerText = collectedData.state;
+      document.getElementById("pzip").innerText = collectedData.zip;
+      document.getElementById("pemail").innerText = collectedData.email;
+      document.getElementById("pphone").innerText = collectedData.phone;
+      document.getElementById("pcourse").innerText = collectedData.course;
+      document.getElementById("plevel").innerText = collectedData.level;
+      document.getElementById("planguage").innerText = collectedData.language;
+      document.getElementById("pcomment").innerText = collectedData.comment;
+      document.getElementById("pstart").innerText = collectedData.start;
+    </script>
+  </body>
+</html>
